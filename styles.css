@@ -77,9 +77,9 @@ video::-webkit-media-controls-cast-button {
 }
 
 .brand-mark {
-  width: min(516px, calc(100% - (var(--pad) * 2)));
+  width: min(344px, calc(100% - (var(--pad) * 2)));
   height: auto;
-  margin: 21px auto 20px;
+  margin: 21px auto 59px;
 }
 
 .media-block {
@@ -596,6 +596,7 @@ video::-webkit-media-controls-cast-button {
 
   .brand-mark {
     margin-top: 18px;
+    margin-bottom: 32px;
   }
 
   .hero-collage {
@@ -636,6 +637,28 @@ video::-webkit-media-controls-cast-button {
   }
 
   .teaser-frame {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .process-card-right {
+    margin-left: 0;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(50px, 4vw, 56px);
+  }
+
+  .section-number {
+    min-width: 44px;
+    margin-top: 10px;
+    font-size: 42px;
+  }
+
+  .process-media-left,
+  .process-media-right {
     width: 100%;
     margin-left: 0;
   }

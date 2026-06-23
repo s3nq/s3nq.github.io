@@ -1,4 +1,4 @@
-const cacheKey = "2026-06-23-3";
+const cacheKey = "2026-06-23-4";
 const ambientVideos = [...document.querySelectorAll(".ambient-video")];
 const galleryColumns = [
   [
@@ -16,6 +16,10 @@ const galleryColumns = [
   [
     { src: "media/IMG_1939 1.png", ratio: "gallery-wide", alt: "Наложение линий, текста и фактур" },
     { src: "media/IMG_1912 2.png", ratio: "gallery-tall", alt: "Городская стена с текстовыми слоями" },
+  ],
+  [
+    { src: "media/gallery-04.png", ratio: "gallery-wide", alt: "Фасад с красной дверью и городскими следами" },
+    { src: "media/gallery-06.png", ratio: "gallery-tall", alt: "Вертикальный городской фрагмент с наклейками" },
   ],
 ];
 
