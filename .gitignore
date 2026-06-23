@@ -1,0 +1,21 @@
+# Local/system files
+.DS_Store
+Thumbs.db
+
+# Keep the repository lean: commit only media used by the page.
+media/**
+!media/
+!media/logo-polotno.png
+!media/teaser-preview.png
+!media/IMG_2807.MP4
+!media/9 видео.mp4
+!media/7 видео.mp4
+!media/8 видео.mp4
+!media/IMG_8038 1.png
+!media/IMG_1920 1.png
+!media/IMG_1922 2.png
+!media/IMG_1918 1.png
+!media/IMG_1927 1.png
+!media/IMG_1933 1.png
+!media/IMG_1939 1.png
+!media/IMG_1912 2.png

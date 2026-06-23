@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Полотно</title>
+  <meta name="description" content="Полотно — проект о городском визуальном шуме, следах и слоях.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2026-06-23-3">
+</head>
+
+<body>
+  <main class="site-shell">
+    <section class="hero-section" aria-label="Полотно">
+      <img class="brand-mark" src="media/logo-polotno.png?v=2026-06-23-3" alt="Полотно" width="516" height="118"
+        decoding="async">
+
+      <figure class="media-block hero-collage is-visible">
+        <video class="ambient-video" data-src="media/9 видео.mp4" autoplay muted loop playsinline
+          preload="metadata"></video>
+        <span class="media-placeholder" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <section class="info-grid section-pad" aria-label="Этапы проекта">
+      <article class="process-card" data-reveal>
+        <header class="section-heading">
+          <span class="section-number">01</span>
+          <h2>сканирование</h2>
+        </header>
+        <p class="section-copy">
+          Сканер фиксирует городскую поверхность вблизи: фактуру, неровности, потертости и следы времени
+        </p>
+        <figure class="media-block process-media process-media-left" data-reveal>
+          <video class="ambient-video" data-src="media/7 видео.mp4" muted loop playsinline preload="none"></video>
+          <span class="media-placeholder" aria-hidden="true"></span>
+        </figure>
+      </article>
+
+      <article class="process-card process-card-right" data-reveal>
+        <header class="section-heading">
+          <span class="section-number">02</span>
+          <h2>визуальный шум</h2>
+        </header>
+        <p class="section-copy">
+          Визуальный шум — это наслоение объявлений, наклеек, повреждений, краски и случайных городских деталей
+        </p>
+        <figure class="media-block process-media process-media-right" data-reveal>
+          <video class="ambient-video" data-src="media/8 видео.mp4" muted loop playsinline preload="none"></video>
+          <span class="media-placeholder" aria-hidden="true"></span>
+        </figure>
+      </article>
+    </section>
+
+    <section class="gallery-section section-pad" aria-label="Галерея шумов">
+      <header class="gallery-heading" data-reveal>
+        <div class="section-heading gallery-title-row">
+          <span class="section-number">03</span>
+          <h2>галерея шумов</h2>
+        </div>
+        <p class="section-copy gallery-copy">
+          Галерея собирает фрагменты визуального шума из разных городских поверхностей. Каждый может внимательнее
+          посмотреть на свое окружение, найти собственный шум и загрузить его в общую коллекцию
+        </p>
+      </header>
+
+      <div class="gallery-shell can-scroll-right" id="galleryShell" data-reveal>
+        <button class="gallery-arrow gallery-arrow-left" id="galleryLeft" type="button"
+          aria-label="Прокрутить фотографии влево"><span aria-hidden="true">←</span></button>
+        <div class="gallery-viewport" id="galleryViewport">
+          <div class="gallery-track" id="galleryTrack"></div>
+        </div>
+        <button class="gallery-arrow gallery-arrow-right" id="galleryRight" type="button"
+          aria-label="Прокрутить фотографии вправо"><span aria-hidden="true">→</span></button>
+      </div>
+
+      <label class="upload-dropzone" id="uploadDropzone" data-reveal>
+        <input id="photoInput" type="file" accept="image/*" multiple>
+        <span>загрузите свой шум</span>
+      </label>
+    </section>
+
+    <section class="teaser section-pad" aria-label="Видео-тизер">
+      <figure class="media-block teaser-frame is-visible" data-reveal>
+        <img class="teaser-poster" src="media/teaser-preview.png?v=2026-06-23-3" alt="" decoding="async">
+        <video class="teaser-video" src="media/IMG_2807.MP4?v=2026-06-23-3" playsinline preload="none"
+          controlslist="nodownload nofullscreen noremoteplayback noplaybackrate" disablepictureinpicture
+          disableremoteplayback></video>
+        <button class="teaser-play" type="button" aria-label="Смотреть тизер">
+          <span aria-hidden="true">▶</span>
+        </button>
+      </figure>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+    <div class="lightbox-stage">
+      <img id="lightboxImage" alt="">
+    </div>
+    <div class="lightbox-tools" aria-label="Масштаб фотографии">
+      <button type="button" data-zoom="out" aria-label="Уменьшить">−</button>
+      <button type="button" data-zoom="reset" aria-label="Сбросить масштаб">1:1</button>
+      <button type="button" data-zoom="in" aria-label="Увеличить">+</button>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=2026-06-23-3" defer></script>
+</body>
+
+</html>
