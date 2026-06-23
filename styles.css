@@ -202,6 +202,10 @@ video::-webkit-media-controls-cast-button {
   aspect-ratio: 916 / 918;
 }
 
+.process-media-right video {
+  object-position: 38% center;
+}
+
 .gallery-section {
   margin-top: var(--gap-lg);
 }
