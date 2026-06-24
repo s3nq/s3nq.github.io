@@ -199,9 +199,9 @@ video::-webkit-media-controls-cast-button {
 }
 
 .process-media-right {
-	width: calc(100% - 22px);
+	width: calc(100% - 18px);
 	margin-top: 27px;
-	margin-left: 15px;
+	margin-left: 5px;
 	aspect-ratio: 916 / 918;
 }
 
