@@ -357,7 +357,7 @@ video::-webkit-media-controls-cast-button {
 	content: '';
 	position: absolute;
 	top: 13px;
-	left: 2px;
+	left: 0.1rem;
 	width: 46px;
 	height: 3px;
 	background: #fff;
@@ -374,7 +374,7 @@ video::-webkit-media-controls-cast-button {
 }
 
 .gallery-arrow-right span::after {
-	right: 3px;
+	right: 3.8px;
 	transform: rotate(45deg);
 }
 
@@ -412,7 +412,7 @@ video::-webkit-media-controls-cast-button {
 	position: relative;
 	display: grid;
 	place-items: center;
-	width: min(944px, 100%);
+	width: min(905px, 100%);
 	min-height: 80px;
 	margin: 26px auto 0;
 	border: 2px solid rgba(255, 255, 255, 0.9);
